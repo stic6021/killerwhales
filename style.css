@@ -1,0 +1,35 @@
+
+.clear-both {
+	clear: both;
+}
+
+#pair-above-water-image, #pod-submerged-image, #theme-park-image {
+	margin: auto;
+	max-height: 319px;
+	max-width: 480px;
+}
+
+#introductory-figure, #social-nature-figure, #theme-park-figure {
+	display: flex;
+	padding: 0;
+}
+
+#pair-above-water-image {
+	float: left;
+}
+
+#pod-submerged-image {
+	float: right;
+}
+
+#social-nature-figure {
+	flex-direction: row-reverse;
+}
+
+#introductory-text, #social-nature-text, #theme-park-text {
+	flex: 1 1 auto;
+	margin: auto;
+	max-width: 25%;
+	min-width: 25%;
+	padding: 24px;
+}
