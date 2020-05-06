@@ -1,4 +1,8 @@
 
+body {
+	font-family: "Arial", "Helvetica", Helvetica, sans-serif;
+}
+
 .clear-both {
 	clear: both;
 }
@@ -8,7 +12,7 @@
 	margin-left: 0;
 	margin-right: 0;
 	padding: 0;
-	width: 960px;
+	width: 768px;
 }
 
 #introductory-figure, #theme-park-figure {
@@ -17,6 +21,7 @@
 
 #introductory-text, #social-nature-text, #theme-park-text {
 	flex: 1 1 auto;
+	font-size: 13px;
 	margin: auto;
 	padding: 24px;
 }
@@ -27,8 +32,8 @@
 
 #pair-above-water-image, #pod-submerged-image, #theme-park-image {
 	margin: auto;
-	max-height: 319px;
-	max-width: 480px;
+	max-height: 256px;
+	max-width: 384px;
 }
 
 #pair-above-water-image, #theme-park-image {
