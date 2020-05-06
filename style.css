@@ -23,11 +23,18 @@ body {
 	flex: 1 1 auto;
 	font-size: 13px;
 	margin: auto;
+	font-size-adjust: 
 	padding: 24px;
 }
 
 #introductory-text, #theme-park-text {
-	margin-left: 0;
+	margin-left: 16px;
+}
+
+@media (max-width: 768px) {
+	#introductory-text, #social-nature-text, #theme-park-text {
+		font-size: 10px;
+	}	
 }
 
 #pair-above-water-image, #pod-submerged-image, #theme-park-image {
