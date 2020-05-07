@@ -12,7 +12,7 @@ body {
 	margin-left: 0;
 	margin-right: 0;
 	padding: 0;
-	width: 768px;
+	width: 720px;
 }
 
 #introductory-figure, #theme-park-figure {
@@ -31,16 +31,26 @@ body {
 	margin-left: 16px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 360px) {
+	#introductory-figure, #social-nature-figure, #theme-park-figure {
+		width: 360px;
+	}
+
 	#introductory-text, #social-nature-text, #theme-park-text {
-		font-size: 10px;
+		font-size: 9px;
 	}	
+
+	#pair-above-water-image, #pod-submerged-image, #theme-park-image {
+		margin: auto;
+		max-height: 120px;
+		max-width: 180px;
+	}
 }
 
 #pair-above-water-image, #pod-submerged-image, #theme-park-image {
 	margin: auto;
-	max-height: 256px;
-	max-width: 384px;
+	max-height: 240px;
+	max-width: 360px;
 }
 
 #pair-above-water-image, #theme-park-image {
