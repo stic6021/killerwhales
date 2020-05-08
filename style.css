@@ -1,6 +1,8 @@
 
 body {
 	font-family: "Arial", "Helvetica", Helvetica, sans-serif;
+	padding-left: 12px;
+	padding-top: 6px;
 }
 
 .clear-both {
