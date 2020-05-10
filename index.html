@@ -1,30 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<title>Killer Whales</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		<link href="style.css" rel="stylesheet">
+		<title>Killer Whales</title>
 	</head>
 	<body>
-		<section>
-			<h1>Killer Whales - Graceful, Intelligent and Playful</h1>
-			<i>The factual text about these magnificent animals was copied from wikipedia.org. Full credit to them.</i>
-			<div id="post-heading-whitespace"></div>
-			<figure id="introductory-figure">
-				<img id="pair-above-water-image" src="PairAboveWater.jpg" alt="A happy pair of killer whales">
-				<aside id="introductory-text">The killer whale or orca (Orcinus orca) is a toothed whale belonging to the oceanic dolphin family, of which it is the largest member. Killer whales have a diverse diet, although individual populations often specialize in particular types of prey. Some feed exclusively on fish, while others hunt marine mammals such as seals and other species of dolphin. They have been known to attack baleen whale calves, and even adult whales. Killer whales are apex predators, as no animal preys on them. A cosmopolitan species, they can be found in each of the world's oceans in a variety of marine environments, from Arctic and Antarctic regions to tropical seas, absent only from the Baltic and Black seas, and some areas of the Arctic Ocean.</aside>
-			</figure>
-			<div class="clear-both"></div>
-			<div class="small-vertical-whitespace"></div>
-			<figure id="social-nature-figure">
-				<img id="pod-submerged-image" src="OrcaPodSubmerged.jpg" alt="A pod of killer whales in a natural habitat">
-				<aside id="social-nature-text">Killer whales are highly social; some populations are composed of matrilineal family groups (pods) which are the most stable of any animal species. Their sophisticated hunting techniques and vocal behaviours, which are often specific to a particular group and passed across generations, have been described as manifestations of animal culture.</aside>
-			</figure>
-			<div class="clear-both"></div>
-			<div class="small-vertical-whitespace"></div>
-			<figure id="theme-park-figure">
-				<img id="theme-park-image" src="http://www.thethemeparkguy.com/park/six-flags-discovery-kingdom/six-flags-discovery-kingdom-24-big.jpg" alt="Killer whales trained to entertain humans">
-				<aside id="theme-park-text">The killer whale's intelligence, trainability, striking appearance, playfulness in captivity and sheer size have made it a popular exhibit at aquaria and aquatic theme parks. From 1976 to 1997, 55 whales were taken from the wild in Iceland, 19 from Japan, and three from Argentina. These figures exclude animals that died during capture. Live captures fell dramatically in the 1990s, and by 1999, about 40% of the 48 animals on display in the world were captive-born.</aside>
-		</section>
+		<div id="top-navbar-container">
+			<nav class="navbar navbar-expand navbar-light bg-light" id="page-top-navbar">
+				<a class="navbar-brand" href="#">Orca</a>
+				<div class="navbar-nav ml-auto">
+					<a class="btn btn-link nav-link" id="nav-button-home" href="index.html" role="button">Home</a>
+					<a class="btn btn-link nav-link" id="nav-button-wikipedia" href="https://en.wikipedia.org/wiki/Killer_whale" role="button">Wikipedia page</a>
+				</div>
+			</nav>
+		</div>
+		<h1>Killer Whales - Intelligent and Playful</h1>
+		<i>The factual text about these magnificent animals was copied from wikipedia.org. Full credit to them.</i>
+		<div id="post-heading-whitespace"></div>
+		<div class="accordion" id="introductory-accordion">
+			<div class="card">
+				<div class="card-header" id="introduction-header">
+					<h6 class="mb-0">
+						<button class="btn btn-link no-padding-button" type="button" data-toggle="collapse" data-target="#collapse-intro" aria-expanded="true" aria-controls="collapse-intro">
+							Introduction
+						</button>
+					</h6>
+				</div>
+				<div id="collapse-intro" class="collapse show" aria-labelledby="introduction-header" data-parent="#introductory-accordion">
+					<div class="card-body" id="introductory-figure">
+						<img id="pair-above-water-image" src="PairAboveWater.jpg" alt="A happy pair of killer whales">
+						<aside id="introductory-text">The killer whale or orca (Orcinus orca) is a toothed whale belonging to the oceanic dolphin family, of which it is the largest member. Killer whales have a diverse diet, although individual populations often specialize in particular types of prey. Some feed exclusively on fish, while others hunt marine mammals such as seals and other species of dolphin. They have been known to attack baleen whale calves, and even adult whales. Killer whales are apex predators, as no animal preys on them. A cosmopolitan species, they can be found in each of the world's oceans in a variety of marine environments, from Arctic and Antarctic regions to tropical seas, absent only from the Baltic and Black seas, and some areas of the Arctic Ocean.</aside>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clear-both"></div>
+		<div class="accordion" id="social-nature-accordion">
+			<div class="card">
+				<div class="card-header" id="social-nature-header">
+					<h6 class="mb-0">
+						<button class="btn btn-link collapsed no-padding-button" type="button" data-toggle="collapse" data-target="#collapse-socnat" aria-expanded="false" aria-controls="collapse-socnat">
+							Social Nature
+						</button>
+					</h6>
+				</div>
+				<div id="collapse-socnat" class="collapse" aria-labelledby="social-nature-header" data-parent="#social-nature-accordion">
+					<div class="card-body" id="social-nature-figure">
+						<img id="pod-submerged-image" src="OrcaPodSubmerged.jpg" alt="A pod of killer whales in a natural habitat">
+						<aside id="social-nature-text">Killer whales are highly social; some populations are composed of matrilineal family groups (pods) which are the most stable of any animal species. Their sophisticated hunting techniques and vocal behaviours, which are often specific to a particular group and passed across generations, have been described as manifestations of animal culture.</aside>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clear-both"></div>
+		<div class="accordion" id="theme-park-accordion">
+			<div class="card">
+				<div class="card-header" id="theme-park-header">
+					<h6 class="mb-0">
+						<button class="btn btn-link collapsed no-padding-button" type="button" data-toggle="collapse" data-target="#collapse-themepark" aria-expanded="false" aria-controls="collapse-themepark">
+							Theme Park Entertainers
+						</button>
+					</h6>
+				</div>
+				<div id="collapse-themepark" class="collapse" aria-labelledby="theme-park-header" data-parent="#theme-park-accordion">
+					<div class="card-body" id="theme-park-figure">
+						<img id="theme-park-image" src="http://www.thethemeparkguy.com/park/six-flags-discovery-kingdom/six-flags-discovery-kingdom-24-big.jpg" alt="Killer whales trained to entertain humans">
+						<aside id="theme-park-text">The killer whale's intelligence, trainability, striking appearance, playfulness in captivity and sheer size have made it a popular exhibit at aquaria and aquatic theme parks. From 1976 to 1997, 55 whales were taken from the wild in Iceland, 19 from Japan, and three from Argentina. These figures exclude animals that died during capture. Live captures fell dramatically in the 1990s, and by 1999, about 40% of the 48 animals on display in the world were captive-born.</aside>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer mt-auto">
+			<div class="container" id="footer-container">
+				<span id="footer-text">Copyright (c) 2020 Steve Tice</span>
+			</div>
+		</footer>
 	</body>
 </html>

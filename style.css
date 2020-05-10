@@ -9,28 +9,50 @@ body {
 	clear: both;
 }
 
+#collapse-intro, #collapse-socnat, #collapse-themepark {
+	padding-bottom: 8px;
+	padding-top: 8px;
+}
+
+#footer-container {
+	background-color: darkgrey;
+	color: white;
+	font-size: 10px;
+	margin-left: 0;
+	padding: 4px;
+	text-align: center;
+}
+
+#introduction-header, #social-nature-header {
+	margin: 0;
+}
+
 #introductory-figure, #social-nature-figure, #theme-park-figure {
 	display: flex;
 	margin-left: 0;
 	margin-right: 0;
 	padding: 0;
-	width: 720px;
 }
 
 #introductory-figure, #theme-park-figure {
 	padding-left: 8px;
 }
 
+#footer-container, #introductory-accordion, #social-nature-accordion, #social-nature-figure, #theme-park-accordion, #theme-park-figure, #top-navbar-container {
+	width: 720px;
+}
+
 #introductory-text, #social-nature-text, #theme-park-text {
 	flex: 1 1 auto;
 	font-size: 13px;
 	margin: auto;
-	font-size-adjust: 
 	padding: 24px;
 }
 
-#introductory-text, #theme-park-text {
-	margin-left: 16px;
+#introductory-text, #social-nature-text, #theme-park-text {
+	margin: 16px;
+	margin-bottom: auto;
+	margin-top: auto;
 }
 
 @media (max-width: 360px) {
@@ -49,6 +71,27 @@ body {
 	}
 }
 
+#nav-button-home {
+	background-color: green;
+	color: white;
+	margin-right: 8px;
+}
+
+#nav-button-wikipedia {
+	background-color: yellow;
+	color: black;
+}
+
+.no-padding-button {
+	padding: 0;
+}
+
+#page-top-navbar {
+	margin-bottom: 16px;
+	padding-bottom: 2px;
+	padding-top: 2px;
+}
+
 #pair-above-water-image, #pod-submerged-image, #theme-park-image {
 	margin: auto;
 	max-height: 240px;
@@ -62,7 +105,6 @@ body {
 
 #pod-submerged-image {
 	float: right;
-	margin-right: 0;
 }
 
 #post-heading-whitespace {
@@ -75,9 +117,5 @@ body {
 
 #social-nature-figure {
 	flex-direction: row-reverse;
-}
-
-#social-nature-text {
-	margin-right: 8px;
-	padding-left: 16px
+	padding-right: 10px;
 }
