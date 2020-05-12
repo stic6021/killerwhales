@@ -32,7 +32,12 @@ body {
 }
 
 .image-in-two-column-row {
-	max-width: 98%;
+	max-width: 100%;
+}
+
+.column-in-two-column-row {
+	margin-bottom: auto;
+	margin-top: auto;
 }
 
 .smaller-text {
