@@ -107,6 +107,12 @@ body {
 	float: right;
 }
 
+.portrait-phone-only-text {
+	float: left;
+	font-weight: bolder;
+	padding: 12%;
+}
+
 #post-heading-whitespace {
 	margin: 48px;
 }
