@@ -1,8 +1,10 @@
 
 body {
 	font-family: "Arial", "Helvetica", Helvetica, sans-serif;
-	padding-left: 12px;
-	padding-top: 6px;
+}
+
+#body-level-container {
+	padding: 0;
 }
 
 .clear-both {
